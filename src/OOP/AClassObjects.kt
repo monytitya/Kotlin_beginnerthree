@@ -1,7 +1,7 @@
 package OOP
 
 
-class Person{
+class Persons{
     var name: String =""
     var age: Int = 0
 
@@ -19,7 +19,7 @@ class Car(val brand: String, var model: String) {
 
 fun main()
 {
-   val person1 = Person()
+   val person1 = Persons()
     person1.name = "Tityamony"
     person1.age = 21
     //Call back Funtions

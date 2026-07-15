@@ -1,7 +1,7 @@
 package OOP
 
 
-class Rectangle {
+class Rectangles {
     var width: Int
     var height: Int
 
@@ -13,7 +13,7 @@ class Rectangle {
     }
 }
 // class 2
-class Animal(val name: String){
+class Animals(val name: String){
     var age: Int = 0
     constructor(name: String ,age: Int ) : this(name)
     { this.age= age }
@@ -26,16 +26,15 @@ class Animal(val name: String){
 
 fun main()
 {
-    val rect1 = Rectangle(5, 3)
-    val rect2 = Rectangle(4,3)
-    val rect3 = Rectangle(10,3)
+    val rect1 = Rectangles(5, 3)
+    val rect2 = Rectangles(4,3)
+    val rect3 = Rectangles(10,3)
 
-    println("Area 1: ${rect1.area()}")
-    println("Area 2: ${rect2.area()}")
-    println("Area 3: ${rect3.area()}")
+    println("Area 1: ${rect1}")
+    println("Area 2: ${rect2}")
+    println("Area 3: ${rect3}")
 
     val animal1 = Animal("Dog")
-    val animal2 = Animal("Cat", 3)
-    animal1.display()
+    val animal2 = Animals("Cat", 3)
     animal2.display()
 }
