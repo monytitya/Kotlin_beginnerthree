@@ -11,7 +11,7 @@ class Employee(
     val name: String
 )
 
-class User(
+class Users(
     val name: String,
     var age: Int,
     val email: String
@@ -53,8 +53,8 @@ fun main() {
     println()
 
     // Users
-    val user1 = User("tityamony", 21, "tityamony@email.com")
-    val user2 = User("mannvy", 19, "mannvy@email.com")
+    val user1 = Users("tityamony", 21, "tityamony@email.com")
+    val user2 = Users("mannvy", 19, "mannvy@email.com")
 
     println("User 1")
     println("Name  : ${user1.name}")
@@ -69,11 +69,11 @@ fun main() {
     println()
 
     // Product
-    val product = Products("Laptop", 999.99)
+    val products = Products("Laptop", 999.99)
 
     println("Product")
-    println("Name  : ${product.name}")
-    println("Price : $${product.price}")
+    println("Name  : ${products.name}")
+    println("Price : $${products.price}")
     println()
 
     // Books
